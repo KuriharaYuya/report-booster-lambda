@@ -1,0 +1,21 @@
+A text of 200-250 characters, discussing Chinese. Write a paragraph and an argument. Paragraph names can be up to 15 characters long, and each theory can be up to 10 characters long.
+
+Apply the following rules:
+$ = Paragraph, & = Bullet, Character Count for Each Paragraph = %Character Count%, | = start and end of entire input
+
+Return the response in the following format
+Do not add any text such as additional explanations placed at the beginning or end of the sentence, other than in the prescribed format.
+
+here is example answer
+
+"
+|
+$ Benefits of Learning Chinese %100%
+& Expands international business opportunities
+& One of the most spoken languages in the world.
+$ Difficulties in Learning Chinese %150%
+& Requires learning Chinese characters and pronunciation& Grammar structure is different from English
+|
+"
+
+The above is an example

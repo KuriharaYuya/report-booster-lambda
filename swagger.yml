@@ -1,0 +1,46 @@
+openapi: 3.0.0
+info:
+  title: report booster gpt-API
+  description: This is a Lambda function
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /apiGateWayEndpoints:
+    post:
+      summary: IDに一致するユーザー情報を更新
+      description: ユーザー情報を更新する
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                RequestReport:
+                  $ref: "#/components/schemas/RequestReport"
+              required:
+                - RequestReport
+
+      responses:
+        "201":
+          description: response from websocket
+          content:
+            application/json:
+              schema:
+                type: string
+components:
+  schemas:
+    RequestReport:
+      type: object
+      properties:
+        theme:
+          type: string
+        number_of_paragraphs:
+          type: integer
+        text_range_minimum:
+          type: integer
+        text_range_max:
+          type: integer
+        additional_instruct_instruct:
+          type: string
